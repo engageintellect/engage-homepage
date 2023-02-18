@@ -4,7 +4,7 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
+import About from '~/components/widgets/About.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
@@ -24,12 +24,12 @@ const meta = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    callToAction={{ text: 'Learn More', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
-    callToAction2={{ text: 'Blog', href: '/blog' }}
+    callToAction={{ text: 'Learn More', href: '/#about', icon: 'tabler:download' }}
+    callToAction2={{ text: 'Blog', href: '/blog', icon: 'tabler:brand-github' }}
     image={{ src: 'https://github.com/engageintellect.png', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      <span class="text-accent dark:text-white highlight">@</span>engageintellect
+      <span class="text-accent highlight">@</span>engageintellect
     </Fragment>
 
     <Fragment slot="subtitle">
@@ -48,37 +48,37 @@ const meta = {
 
   <!-- Features Widget *************** -->
 
-  <Features
+  <About
     highlight="About"
     title="I'm Josh."
-    subtitle="Full Stack Developer based in Orange Count, CA."
+    subtitle="Full Stack Developer based in Orange County, CA."
     items={[
       [
         {
-          title: 'Astro + Tailwind CSS Integration',
+          title: 'Fullstack Development',
           description:
-            'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+            'Modern fullstack web development involves utilizing a wide range of technologies and tools to create dynamic, responsive, and scalable web applications that can run on various platforms and devices.',
           icon: 'ant-design:cloud-server-outlined',
         },
         {
-          title: 'Ready-to-use Components',
+          title: 'Fullstack Development',
           description:
-            'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-          icon: 'tabler:device-laptop',
+            'Modern fullstack web development involves utilizing a wide range of technologies and tools to create dynamic, responsive, and scalable web applications that can run on various platforms and devices.',
+          icon: 'ant-design:cloud-server-outlined',
         },
       ],
       [
         {
           title: 'Excellent Page Speed',
           description:
-            'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+            'Technology researchers explore, investigate, and evaluate cutting-edge technologies and techniques to advance the state of the art, solve complex problems, and create new opportunities in various fields and industries',
           icon: 'tabler:rocket',
         },
         {
-          title: 'Search Engine Optimization (SEO)',
+          title: 'Fullstack Development',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-          icon: 'tabler:arrows-right-left',
+            'Modern fullstack web development involves utilizing a wide range of technologies and tools to create dynamic, responsive, and scalable web applications that can run on various platforms and devices.',
+          icon: 'ant-design:cloud-server-outlined',
         },
       ],
     ]}
@@ -126,25 +126,22 @@ const meta = {
     items={[
       {
         title: 'Per ei quaeque sensibus',
+        description:
+          'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
       },
       {
         title: 'Cu imperdiet posidonium sed',
+        description:
+          'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
       },
       {
         title: 'Nulla omittam sadipscing mel ne',
-      },
-      {
-        title: 'Per ei quaeque sensibus',
-      },
-      {
-        title: 'Cu imperdiet posidonium sed',
-      },
-      {
-        title: 'Nulla omittam sadipscing mel ne',
+        description:
+          'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1503252947848-7338d3f92f31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y29kaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
+      src: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3134&q=80',
       alt: 'Vintage Image',
     }}
   />
@@ -178,7 +175,7 @@ const meta = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80',
+      src: 'https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3132&q=80',
       alt: 'Steps image',
     }}
   />
@@ -193,7 +190,7 @@ const meta = {
       {
         title: 'Next.js',
         description:
-          'In general, Headers contain information that makes it easier for visitors to interact with the website.',
+          'Next.js is a versatile React framework for building performant server-side rendered and statically generated web applications with seamless integration with popular web technologies.',
         icon: 'teenyicons:nextjs-solid',
       },
       {
@@ -268,7 +265,7 @@ const meta = {
   <!-- HighlightedPosts Widget ******* -->
 
   <LatestPosts
-    title="Find out more content in my Blog"
+    title="Projects & Articles"
     information={`The blog is used to display AstroWind documentation.
 			Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
 			Astro is a very interesting technology. Thanks.
@@ -342,7 +339,7 @@ const meta = {
     callToAction={{
       text: 'GitHub',
       href: 'https://github.com/engageintellect',
-      icon: 'tabler:download',
+      icon: 'tabler:brand-github',
     }}
   >
     <Fragment slot="title">
