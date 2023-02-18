@@ -1,6 +1,6 @@
 {
-  "name": "@onwidget/astrowind",
-  "description": "A template to make your website using Astro + Tailwind CSS.",
+  "name": "@engageintellect/astro-homepage",
+  "description": "A homepage for @emergingintellect",
   "version": "0.9.8",
   "private": true,
   "scripts": {
