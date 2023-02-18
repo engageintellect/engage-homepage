@@ -4,6 +4,11 @@
 
 A simple website for @engageintellect.
 
+# Features
+
+- Astro
+- TailwindCSS
+
 ## Getting Started:
 
 ```bash
