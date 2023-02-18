@@ -2,7 +2,7 @@
 publishDate: 2023-01-30T00:00:00Z
 title: How product leaders create and manage user perception in today's socially sensitive age.
 description: A story of product management and social engineering.
-excerpt: Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur.
+excerpt: Dealing with the Perils of User-Generated Content, An Internal Product Branding Case Study
 image: 'https://miro.medium.com/v2/resize:fit:1400/0*dmFlpjra37Gitqcx'
 category: Articles
 tags:
