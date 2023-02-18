@@ -24,19 +24,18 @@ const meta = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    callToAction={{ text: 'Get template', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
-    callToAction2={{ text: 'Learn more', href: '#features' }}
-    image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
+    callToAction={{ text: 'Learn More', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
+    callToAction2={{ text: 'Blog', href: '/blog' }}
+    image={{ src: 'https://github.com/engageintellect.png', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      A free template for <span class="hidden xl:inline">creating beautiful websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 2.0</span> + Tailwind CSS
+      <span class="text-accent dark:text-white highlight">@</span>engageintellect
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 2.0 +
-        Tailwind CSS.</span
+        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 2.0
+        + Tailwind CSS.</span
       >
       <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span> Suitable for Startups,
       Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.
@@ -50,28 +49,22 @@ const meta = {
   <!-- Features Widget *************** -->
 
   <Features
-    highlight="Features"
-    title="What you get with AstroWind"
-    subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
+    highlight="About"
+    title="I'm Josh."
+    subtitle="Full Stack Developer based in Orange Count, CA."
     items={[
       [
         {
           title: 'Astro + Tailwind CSS Integration',
           description:
             'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-          icon: 'tabler:brand-tailwind',
+          icon: 'ant-design:cloud-server-outlined',
         },
         {
           title: 'Ready-to-use Components',
           description:
             'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-          icon: 'tabler:components',
-        },
-        {
-          title: 'Best Practices',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-          icon: 'tabler:list-check',
+          icon: 'tabler:device-laptop',
         },
       ],
       [
@@ -86,12 +79,6 @@ const meta = {
           description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
           icon: 'tabler:arrows-right-left',
-        },
-        {
-          title: 'Open to new ideas and contributions',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-          icon: 'tabler:bulb',
         },
       ],
     ]}
@@ -120,7 +107,7 @@ const meta = {
       },
     ]}
     image={{
-      src: import('~/assets/images/caos.jpg'),
+      src: 'https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80',
       alt: 'Colorful Image',
     }}
   >
@@ -157,7 +144,7 @@ const meta = {
       },
     ]}
     image={{
-      src: import('~/assets/images/vintage.jpg'),
+      src: 'https://images.unsplash.com/photo-1503252947848-7338d3f92f31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y29kaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
       alt: 'Vintage Image',
     }}
   />
@@ -191,7 +178,7 @@ const meta = {
       },
     ]}
     image={{
-      src: import('~/assets/images/creativity.jpg'),
+      src: 'https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80',
       alt: 'Steps image',
     }}
   />
@@ -199,63 +186,81 @@ const meta = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    highlight="Components"
+    title="Technologies"
+    subtitle="These are the technologies I use to build my projects."
+    highlight="Skills"
     items={[
       {
-        title: 'Headers',
+        title: 'Next.js',
         description:
           'In general, Headers contain information that makes it easier for visitors to interact with the website.',
-        icon: 'flat-color-icons:template',
+        icon: 'teenyicons:nextjs-solid',
       },
       {
-        title: 'Heros',
+        title: 'React',
         description:
           'If you want your website to get more than its fair share of visitors, the Hero section needs to be stellar.',
-        icon: 'flat-color-icons:gallery',
+        icon: 'logos:react',
       },
       {
-        title: 'Features',
+        title: 'Sveltekit',
         description:
           'Display your product in action and how the Features actually create a solution for your target customer.',
-        icon: 'flat-color-icons:todo-list',
+        icon: 'vscode-icons:file-type-svelte',
       },
       {
-        title: 'Content',
+        title: 'Astro',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:document',
+        icon: 'vscode-icons:file-type-astro',
       },
       {
-        title: 'Call-to-Action',
+        title: 'PlanetScale',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:advertising',
+        icon: 'vscode-icons:file-type-mysql',
       },
       {
-        title: 'Pricing',
+        title: 'GraphQL',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:currency-exchange',
+        icon: 'vscode-icons:file-type-graphql',
       },
       {
-        title: 'Testimonial',
+        title: 'Python',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:voice-presentation',
+        icon: 'vscode-icons:file-type-python',
       },
       {
-        title: 'Contact',
+        title: 'Vercel',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:business-contact',
+        icon: 'ion:logo-vercel',
       },
       {
-        title: 'Footers',
+        title: 'AWS',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'icon-park:page-template',
+        icon: 'mdi:aws',
+      },
+      {
+        title: 'TailwindCSS',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        icon: 'vscode-icons:file-type-tailwind',
+      },
+      {
+        title: 'TypeScript',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        icon: 'vscode-icons:file-type-typescript-official',
+      },
+      {
+        title: 'OpenAI',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        icon: 'simple-icons:openai',
       },
     ]}
   />
@@ -263,7 +268,7 @@ const meta = {
   <!-- HighlightedPosts Widget ******* -->
 
   <LatestPosts
-    title="Find out more content in our Blog"
+    title="Find out more content in my Blog"
     information={`The blog is used to display AstroWind documentation.
 			Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
 			Astro is a very interesting technology. Thanks.
@@ -335,8 +340,8 @@ const meta = {
 
   <CallToAction
     callToAction={{
-      text: 'Get template',
-      href: 'https://github.com/onwidget/astrowind',
+      text: 'GitHub',
+      href: 'https://github.com/engageintellect',
       icon: 'tabler:download',
     }}
   >

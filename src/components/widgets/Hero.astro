@@ -31,6 +31,29 @@ const {
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
     <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
     <div class="py-12 md:py-20">
+      <div>
+        {
+          image && (
+            <div class="relative m-auto max-w-5xl py-10">
+              {typeof image === 'string' ? (
+                <Fragment set:html={image} />
+              ) : (
+                <a href="https://www.github.com/engageintellect">
+                  <Picture
+                    class="mx-auto rounded-full shadow-lg shadow-purple-500 hover:animate-pulse transition-all duration-200"
+                    widths={[1024, 1024]}
+                    aspectRatio={1 / 1}
+                    loading="eager"
+                    width={200}
+                    height={200}
+                    {...image}
+                  />
+                </a>
+              )}
+            </div>
+          )
+        }
+      </div>
       <div class="text-center pb-10 md:pb-16 max-w-screen-lg mx-auto">
         {
           title && (
@@ -82,28 +105,6 @@ const {
           </div>
         </div>
         {content && <Fragment set:html={content} />}
-      </div>
-      <div>
-        {
-          image && (
-            <div class="relative m-auto max-w-5xl">
-              {typeof image === 'string' ? (
-                <Fragment set:html={image} />
-              ) : (
-                <Picture
-                  class="mx-auto rounded-md w-full"
-                  widths={[400, 768, 1024, 2040]}
-                  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
-                  aspectRatio={1024 / 576}
-                  loading="eager"
-                  width={1024}
-                  height={576}
-                  {...image}
-                />
-              )}
-            </div>
-          )
-        }
       </div>
     </div>
   </div>
