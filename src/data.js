@@ -3,37 +3,18 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Sections',
-      links: [
-        {
-          text: 'About',
-          href: '#about',
-        },
-        {
-          text: 'Details',
-          href: '#details',
-        },
-        {
-          text: 'Technologies',
-          href: '#technologies',
-        },
-        {
-          text: 'Projects',
-          href: '#projects',
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
-      ],
-    },
-    {
-      text: 'Blog',
+      text: 'blog',
       href: getBlogPermalink(),
+    },
+
+    {
+      text: 'articles',
+      href: '/category/articles',
+    },
+
+    {
+      text: 'projects',
+      href: '/category/projects',
     },
   ],
   actions: [{ type: 'button', text: 'GitHub', href: 'https://github.com/engageintellect' }],
