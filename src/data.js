@@ -16,32 +16,35 @@ export const headerData = {
       text: 'projects',
       href: '/category/projects',
     },
+
+    {
+      text: 'faq',
+      href: '/#faq',
+    },
   ],
-  actions: [{ type: 'button', text: 'GitHub', href: 'https://github.com/engageintellect' }],
+  actions: [
+    { type: 'button', text: 'GitHub', href: 'https://github.com/engageintellect', icon: 'tabler:brand-facebook' },
+  ],
 };
 
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Site',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Home', href: '/' },
+        { text: 'Blog', href: '/blog' },
+        { text: 'Articles', href: '/category/articles' },
+        { text: 'Projects', href: '/category/projects' },
+        { text: 'FAQs', href: '/#faq' },
       ],
     },
     {
-      title: 'Platform',
+      title: 'Technology',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'Astro', href: 'https://astro.build' },
+        { text: 'Tailwind', href: 'https://tailwindcss.com' },
+        { text: 'Vercel', href: 'https://vercel.com' },
       ],
     },
     {

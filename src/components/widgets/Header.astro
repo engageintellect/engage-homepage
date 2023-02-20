@@ -121,8 +121,16 @@ const {
                     { 'btn-ghost': type === 'ghost', 'btn-primary': type === 'primary' },
                   ]}
                   href={href}
+                  target="_blank"
                 >
-                  <Fragment set:html={text} />
+                  <div class="flex items-center justify-center gap-1.5">
+                    <div>
+                      <Icon name="tabler:brand-github" class="w-5 h-5 hidden md:inline" />
+                    </div>
+                    <div>
+                      <Fragment set:html={text} />
+                    </div>
+                  </div>
                 </a>
               ))}
             </span>
