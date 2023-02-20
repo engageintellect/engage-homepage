@@ -39,7 +39,7 @@ const {
                 <Fragment set:html={image} />
               ) : (
                 <Picture
-                  class="mx-auto rounded-full shadow-md shadow-neutral-500 hover:animate-pulse transition-all duration-200"
+                  class="mx-auto rounded-full shadow-md shadow-stone-500 hover:animate-pulse transition-all duration-200"
                   widths={[1024, 1024]}
                   aspectRatio={1 / 1}
                   loading="eager"
@@ -56,13 +56,13 @@ const {
         {
           title && (
             <h1
-              class="text-4xl sm:text-6xl text-center font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-slate-200"
+              class="text-4xl sm:text-6xl text-center font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-stone-200"
               set:html={title}
             />
           )
         }
         <div class="max-w-3xl mx-auto">
-          {subtitle && <p class="text-xl text-muted mb-6 dark:text-slate-300" set:html={subtitle} />}
+          {subtitle && <p class="text-xl text-muted mb-6 dark:text-stone-300" set:html={subtitle} />}
           <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
             {
               callToAction && (

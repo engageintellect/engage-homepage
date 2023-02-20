@@ -58,7 +58,7 @@ const {
       </div>
     </div>
     <nav
-      class="items-center w-full md:w-auto hidden md:flex dark:text-slate-200 h-[calc(100vh-72px)] md:h-auto overflow-y-auto md:overflow-visible md:mx-5"
+      class="items-center w-full md:w-auto hidden md:flex dark:text-stone-200 h-[calc(100vh-72px)] md:h-auto overflow-y-auto md:overflow-visible md:mx-5"
       aria-label="Main navigation"
     >
       <ul class="flex flex-col pt-8 md:pt-0 md:flex-row md:self-center w-full md:w-auto text-xl md:text-base">
@@ -67,14 +67,14 @@ const {
             <li class={links?.length ? 'dropdown' : ''}>
               {links?.length ? (
                 <>
-                  <button class="font-medium hover:text-slate-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out">
+                  <button class="font-medium hover:text-stone-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out">
                     {text} <Icon name="tabler:chevron-down" class="w-3.5 h-3.5 ml-0.5 hidden md:inline" />
                   </button>
                   <ul class="dropdown-menu md:backdrop-blur-md dark:md:bg-dark rounded md:absolute pl-4 md:pl-0 md:hidden font-medium md:bg-white/90 md:min-w-[200px] drop-shadow-xl">
                     {links.map(({ text: text2, href: href2 }) => (
                       <li>
                         <a
-                          class="first:rounded-t last:rounded-b md:hover:bg-slate-200 dark:hover:bg-slate-700 py-2 px-5 block whitespace-no-wrap"
+                          class="first:rounded-t last:rounded-b md:hover:bg-stone-200 dark:hover:bg-stone-700 py-2 px-5 block whitespace-no-wrap"
                           href={href2}
                         >
                           {text2}
@@ -85,7 +85,7 @@ const {
                 </>
               ) : (
                 <a
-                  class="font-medium hover:text-slate-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
+                  class="font-medium hover:text-stone-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
                   href={href}
                 >
                   {text}
@@ -103,7 +103,7 @@ const {
         {
           showRssFeed && (
             <a
-              class="text-muted dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+              class="text-muted dark:text-stone-400 hover:bg-stone-100 dark:hover:bg-stone-700 focus:outline-none focus:ring-4 focus:ring-stone-200 dark:focus:ring-stone-700 rounded-lg text-sm p-2.5 inline-flex items-center"
               aria-label="RSS Feed"
               href={getAsset('/rss.xml')}
             >

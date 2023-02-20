@@ -34,7 +34,7 @@ const meta = {
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline"> <span class="font-semibold">Fullstack Web Developer</span> with a focus in</span>
-      <span class="block mb-1 sm:hidden font-bold text-purple-600 text-2xl">Fullstack WebDev</span> Startups, Small Business,
+      <span class="block mb-1 sm:hidden font-bold text-blue-600 text-2xl">Fullstack WebDev</span> Startups, Small Business,
       Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.
     </Fragment>
   </Hero>
@@ -146,28 +146,42 @@ const meta = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time."
+    title="Get your project or website up and running in no time."
     items={[
       {
         title: 'Step 1: <span class="font-medium">Design</span>',
         description:
-          'Great design prioritizes user experience, responsiveness, accessibility, and visual aesthetics, while utilizing advanced technologies and design principles to create dynamic, interactive, and engaging websites.',
+          'Design the website or web application. This may includes wireframes, mockups, and prototypes. This is also the time to decide on a design language or theme for your project.',
         icon: 'tabler:brush',
       },
+
       {
-        title: 'Step 2: <span class="font-medium">DevOps</em>',
+        title: 'Step 2: <span class="font-medium">Plan</span>',
         description:
-          'DevOps is a set of practices and tools that promote collaboration, automation, and continuous delivery, aiming to streamline the software development and deployment process, increase agility, scalability, and reliability, and enable organizations to deliver high-quality software products faster and more efficiently.',
+          'Project roadmap the website or web application. This may include a project plan, timeline, and budget.',
+        icon: 'tabler:brush',
+      },
+
+      {
+        title: 'Step 3: <span class="font-medium">Infrastructure</em>',
+        description: 'Decide on the technology stack, database, schemas, APIs, CI/CD, and deployment strategy.',
         icon: 'tabler:server',
       },
       {
-        title: 'Step 3: <span class="font-medium">Develop</span>',
-        description:
-          'Modern web development encompasses a diverse range of technologies and frameworks, including HTML, CSS, JavaScript, and various libraries and frameworks such as React, Angular, and Vue.js, as well as back-end technologies such as Node.js and serverless computing, to create fast, responsive, and dynamic web applications. It also emphasizes the use of best practices in design, user experience, accessibility, and security to create engaging and reliable web experiences.',
+        title: 'Step 4: <span class="font-medium">Develop</span>',
+        description: 'Start building the website or web application.',
         icon: 'tabler:code',
       },
+
+      {
+        title: 'Step 4: <span class="font-medium">Iterate</span>',
+        description: 'Test and iterate on the design and functionality of the website or web application.',
+        icon: 'tabler:refresh',
+      },
+
       {
         title: 'Deploy!',
+        description: 'Deploy the website or web application to the web or your companies intranet.',
         icon: 'tabler:rocket',
       },
     ]}
@@ -182,7 +196,7 @@ const meta = {
 
   <Features2
     title="Technologies"
-    subtitle="These are the technologies I use to build my projects."
+    subtitle="These are the technologies I use the most to build my projects."
     highlight="Skills"
     items={[
       {
