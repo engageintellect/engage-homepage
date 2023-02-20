@@ -20,7 +20,6 @@ Trpc is a framework for building TypeScript-based RPC (Remote Procedure Call) se
 The first step is to set up a new Next.js project. You can do this by running the following command:
 
 ```bash
-
 npx create-next-app my-trpc-project
 ```
 
@@ -115,7 +114,6 @@ In this example, we define a new component that takes a name prop and uses the u
 We're now ready to test our trpc implementation in a Next.js project. Start the Next.js server by running the following command in your project directory:
 
 ```bash
-
 npm run dev
 ```
 
