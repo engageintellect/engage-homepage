@@ -1,9 +1,9 @@
 import defaultImage from './assets/images/default.png';
 
 const CONFIG = {
-  name: 'engageintellect',
+  name: '@engageintellect',
 
-  origin: 'https://astrowind.vercel.app',
+  origin: 'https://engage-homepage-engageintellect.vercel.app/',
   basePathname: '/',
   trailingSlash: false,
 
