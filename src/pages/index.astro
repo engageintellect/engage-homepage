@@ -5,9 +5,9 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
 import About from '~/components/widgets/About.astro';
-import Features2 from '~/components/widgets/Features2.astro';
+import Features2 from '~/components/widgets/Technologies.astro';
 import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
+// import Content from '~/components/widgets/Content.astro';
 import LatestPosts from '~/components/blog/LatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
@@ -48,17 +48,17 @@ const meta = {
   <About
     highlight="About"
     title="I'm Josh."
-    subtitle="Full Stack Developer based in Orange County, CA."
+    subtitle="Fullstack Developer, based in Orange County, CA."
     items={[
       [
         {
-          title: 'Development',
+          title: 'UI/UX Design',
           description:
             'Modern fullstack web development involves utilizing a wide range of technologies and tools to create dynamic, responsive, and scalable web applications that can run on various platforms and devices.',
           icon: 'ant-design:cloud-server-outlined',
         },
         {
-          title: 'UI/UX Design',
+          title: 'Project Management',
           description:
             'Modern fullstack web development involves utilizing a wide range of technologies and tools to create dynamic, responsive, and scalable web applications that can run on various platforms and devices.',
           icon: 'ant-design:cloud-server-outlined',
@@ -72,7 +72,7 @@ const meta = {
           icon: 'tabler:rocket',
         },
         {
-          title: 'Fullstack Development',
+          title: 'Development',
           description:
             'Modern fullstack web development involves utilizing a wide range of technologies and tools to create dynamic, responsive, and scalable web applications that can run on various platforms and devices.',
           icon: 'ant-design:cloud-server-outlined',
@@ -151,13 +151,13 @@ const meta = {
       {
         title: 'Step 1: <span class="font-medium">Design</span>',
         description:
-          'Modern web design prioritizes user experience, responsiveness, accessibility, and visual aesthetics, while utilizing advanced technologies and design principles to create dynamic, interactive, and engaging websites.',
+          'Great design prioritizes user experience, responsiveness, accessibility, and visual aesthetics, while utilizing advanced technologies and design principles to create dynamic, interactive, and engaging websites.',
         icon: 'tabler:brush',
       },
       {
         title: 'Step 2: <span class="font-medium">DevOps</em>',
         description:
-          'Modern DevOps is a set of practices and tools that promote collaboration, automation, and continuous delivery, aiming to streamline the software development and deployment process, increase agility, scalability, and reliability, and enable organizations to deliver high-quality software products faster and more efficiently.',
+          'DevOps is a set of practices and tools that promote collaboration, automation, and continuous delivery, aiming to streamline the software development and deployment process, increase agility, scalability, and reliability, and enable organizations to deliver high-quality software products faster and more efficiently.',
         icon: 'tabler:server',
       },
       {
@@ -189,72 +189,84 @@ const meta = {
         description:
           'A versatile React framework for building performant server-side rendered and statically generated web applications with seamless integration with popular web technologies.',
         icon: 'teenyicons:nextjs-solid',
+        url: 'https://nextjs.org/',
       },
       {
         title: 'React',
         description:
           'A popular JavaScript library for building user interfaces with reusable components and a virtual DOM, backed by a vast ecosystem of tools and resources.',
         icon: 'logos:react',
+        url: 'https://reactjs.org/',
       },
       {
         title: 'Sveltekit',
         description:
           'A lightweight and fast web framework for building server-rendered and static sites with Svelte, offering intuitive development and easy deployment.',
         icon: 'vscode-icons:file-type-svelte',
+        url: 'https://kit.svelte.dev/',
       },
       {
         title: 'Astro',
         description:
           'A modern static site generator that combines performance, flexibility, and simplicity, enabling developers to build dynamic sites with modern web technologies.',
         icon: 'vscode-icons:file-type-astro',
+        url: 'https://astro.build/',
       },
       {
         title: 'PlanetScale',
         description:
           'A cloud-native database platform that provides scalable, resilient, and globally distributed databases with native support for MySQL, ideal for modern web applications.',
         icon: 'vscode-icons:file-type-mysql',
+        url: 'https://planetscale.com/',
       },
       {
         title: 'GraphQL',
         description:
           'A query language and runtime for APIs that enables efficient and flexible data fetching, type safety, and powerful tools for client-side development.',
         icon: 'vscode-icons:file-type-graphql',
+        url: 'https://graphql.org/',
       },
       {
         title: 'Python',
         description:
           'A versatile and popular high-level programming language that emphasizes readability, simplicity, and productivity, with extensive libraries and frameworks for web development.',
         icon: 'vscode-icons:file-type-python',
+        url: 'https://www.python.org/',
       },
       {
         title: 'Vercel',
         description:
           'A cloud platform for serverless functions, static sites, and JAMstack applications, providing seamless integration with Git, CI/CD, and custom domains.',
         icon: 'ion:logo-vercel',
+        url: 'https://vercel.com/',
       },
       {
         title: 'AWS',
         description:
           'A cloud computing platform that provides a wide range of scalable and flexible services for storage, compute, networking, and more, with robust security and reliability.',
         icon: 'mdi:aws',
+        url: 'https://aws.amazon.com/',
       },
       {
         title: 'TailwindCSS',
         description:
           'A utility-first CSS framework that enables fast and responsive web design with reusable and customizable classes, reducing development time and complexity',
         icon: 'vscode-icons:file-type-tailwind',
+        url: 'https://tailwindcss.com/',
       },
       {
         title: 'TypeScript',
         description:
           'A superset of JavaScript that provides static type checking, enhanced IDE support, and other features for safer and more maintainable code, ideal for large-scale projects.',
         icon: 'vscode-icons:file-type-typescript-official',
+        url: 'https://www.typescriptlang.org/',
       },
       {
         title: 'OpenAI',
         description:
           'A leading artificial intelligence research organization that develops cutting-edge AI technologies and tools to advance human knowledge and solve real-world problems.',
         icon: 'simple-icons:openai',
+        url: 'https://openai.com/',
       },
     ]}
   />
@@ -262,10 +274,9 @@ const meta = {
   <!-- HighlightedPosts Widget ******* -->
 
   <LatestPosts
-    title="Projects & Articles"
-    information={`The blog is used to display AstroWind documentation.
-			Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-			Astro is a very interesting technology. Thanks.
+    title="blog posts, articles, tutorials, and projects."
+    information={`
+      These are some of my latest blog posts, articles, tutorials, and projects. I write about web development, design, and technology. I also share my experiences and lessons learned from my projects and adventures.
 		`}
     postIds={[
       'get-started-website-with-astro-tailwind-css.md',
@@ -342,8 +353,8 @@ const meta = {
     <Fragment slot="title">Contact Me</Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Let's talk about your project. <br class="hidden md:inline" />We'll work together to create a solution that fits
+      your budget and timeline.
     </Fragment>
   </CallToAction>
 </Layout>
