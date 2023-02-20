@@ -12,7 +12,6 @@ export interface Props {
   title?: string;
   subtitle?: string;
   highlight?: string;
-  url?: string;
   items: Array<Item>;
 }
 
@@ -20,7 +19,6 @@ const {
   title = await Astro.slots.render('title'),
   subtitle = await Astro.slots.render('subtitle'),
   highlight,
-  url,
   items = [],
 } = Astro.props;
 ---

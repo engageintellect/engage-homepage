@@ -6,9 +6,9 @@ excerpt: Dealing with the Perils of User-Generated Content, An Internal Product 
 image: 'https://miro.medium.com/v2/resize:fit:1400/0*dmFlpjra37Gitqcx'
 category: Articles
 tags:
-  - medium
-  - product management
-  - social engineering
+  - Medium
+  - Product Management
+  - Social Engineering
 canonical: https://astrowind.vercel.app/get-started-website-with-astro-tailwind-css
 ---
 

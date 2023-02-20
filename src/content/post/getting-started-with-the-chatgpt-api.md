@@ -6,11 +6,10 @@ excerpt: As an AI language model, ChatGPT can generate natural language text in 
 image: 'https://images.unsplash.com/photo-1676299081847-824916de030a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNoYXRncHR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
 category: Articles
 tags:
-  - chatgpt
-  - ai
-  - programming
-  - python
-  - api
+  - ChatGPT
+  - AI
+  - Python
+  - API
 # canonical: https://astrowind.vercel.app/get-started-website-with-astro-tailwind-css
 ---
 
