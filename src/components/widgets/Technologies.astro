@@ -24,28 +24,28 @@ const {
 ---
 
 <section class="relative" id="technologies">
-  <div class="absolute inset-0 bg-blue-50 dark:bg-zinc-800 pointer-events-none mb-32" aria-hidden="true"></div>
+  <div
+    style="background-image: url('https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80');"
+    class="absolute bg-fixed inset-0 pointer-events-none mb-32"
+    aria-hidden="true"
+  >
+  </div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 -mb-12">
     <div class="py-4 pt-8 sm:py-6 lg:py-8 lg:pt-12">
       {
         (title || subtitle || highlight) && (
           <div class="mb-8 md:mx-auto text-center max-w-3xl">
             {highlight && (
-              <p
-                class="text-base text-primary dark:text-blue-200 font-semibold tracking-wide uppercase"
-                set:html={highlight}
-              />
+              <p class="text-primary dark:text-blue-200 font-semibold tracking-wide uppercase" set:html={highlight} />
             )}
             {title && (
               <h2
-                class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading"
+                class="text-4xl md:text-5xl text-white font-bold leading-tighter tracking-tighter mb-4 font-heading"
                 set:html={title}
               />
             )}
 
-            {subtitle && (
-              <p class="max-w-3xl mx-auto sm:text-center text-xl text-muted dark:text-zinc-400" set:html={subtitle} />
-            )}
+            {subtitle && <p class="max-w-3xl mx-auto sm:text-center text-xl text-zinc-400" set:html={subtitle} />}
           </div>
         )
       }
