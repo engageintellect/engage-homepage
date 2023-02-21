@@ -23,7 +23,7 @@ const { post, url } = Astro.props;
     <header class={post.image ? '' : ''}>
       <div class="flex justify-between flex-col sm:flex-row max-w-3xl mx-auto mt-0 mb-2 px-4 sm:px-6 sm:items-center">
         <p>
-          <Icon name="tabler:clock" class="w-4 h-4 inline-block -mt-0.5 dark:text-stone-400" />
+          <Icon name="tabler:clock" class="w-4 h-4 inline-block -mt-0.5 dark:text-zinc-400" />
           <time datetime={String(post.publishDate)}>{getFormattedDate(post.publishDate)}</time>
           {
             post.category && (
@@ -45,21 +45,21 @@ const { post, url } = Astro.props;
         {post.title}
       </h1>
       <p
-        class="max-w-3xl mx-auto mt-4 mb-8 px-4 sm:px-6 text-xl md:text-2xl text-muted dark:text-stone-400 text-justify"
+        class="max-w-3xl mx-auto mt-4 mb-8 px-4 sm:px-6 text-xl md:text-2xl text-muted dark:text-zinc-400 text-justify"
       >
         {post.excerpt}
       </p>
 
       <div class="mx-auto px-6 sm:px-6 max-w-3xl mt-8 flex justify-between flex-col sm:flex-row">
         <PostTags tags={post.tags} class="mr-5" />
-        <SocialShare url={url} text={post.title} class="mt-5 sm:mt-1 align-middle text-stone-500 dark:text-stone-600" />
+        <SocialShare url={url} text={post.title} class="mt-5 sm:mt-1 align-middle text-zinc-500 dark:text-zinc-600" />
       </div>
 
       {
         post.image ? (
           <Picture
             src={post.image}
-            class="max-w-full lg:max-w-6xl mx-auto mb-6 sm:rounded-md bg-stone-400 dark:bg-stone-700"
+            class="max-w-full lg:max-w-6xl mx-auto mb-6 sm:rounded-md bg-zinc-400 dark:bg-zinc-700"
             widths={[400, 900]}
             sizes="(max-width: 900px) 400px, 900px"
             alt={post.description || ''}
@@ -73,13 +73,13 @@ const { post, url } = Astro.props;
           />
         ) : (
           <div class="max-w-3xl mx-auto px-4 sm:px-6">
-            <div class="border-t dark:border-stone-700" />
+            <div class="border-t dark:border-zinc-700" />
           </div>
         )
       }
     </header>
     <div
-      class="mx-auto px-6 sm:px-6 max-w-3xl prose prose-lg lg:prose-xl dark:prose-invert dark:prose-headings:text-stone-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8"
+      class="mx-auto px-6 sm:px-6 max-w-3xl prose prose-lg lg:prose-xl dark:prose-invert dark:prose-headings:text-zinc-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8"
     >
       {
         post.Content ? (

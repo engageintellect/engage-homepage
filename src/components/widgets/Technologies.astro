@@ -24,7 +24,7 @@ const {
 ---
 
 <section class="relative" id="technologies">
-  <div class="absolute inset-0 bg-blue-50 dark:bg-stone-800 pointer-events-none mb-32" aria-hidden="true"></div>
+  <div class="absolute inset-0 bg-blue-50 dark:bg-zinc-800 pointer-events-none mb-32" aria-hidden="true"></div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 -mb-12">
     <div class="py-4 pt-8 sm:py-6 lg:py-8 lg:pt-12">
       {
@@ -44,7 +44,7 @@ const {
             )}
 
             {subtitle && (
-              <p class="max-w-3xl mx-auto sm:text-center text-xl text-muted dark:text-stone-400" set:html={subtitle} />
+              <p class="max-w-3xl mx-auto sm:text-center text-xl text-muted dark:text-zinc-400" set:html={subtitle} />
             )}
           </div>
         )
@@ -53,12 +53,12 @@ const {
         {
           items.map(({ title, description, icon, url }) => (
             <a href={url} target="_blank">
-              <div class="relative flex flex-col p-6 bg-white dark:bg-stone-900 rounded shadow-lg hover:shadow-md transition border border-transparent dark:border-stone-800">
+              <div class="relative flex flex-col p-6 bg-white dark:bg-zinc-900 rounded shadow-lg hover:shadow-md transition border border-transparent dark:border-zinc-800">
                 <div class="flex items-center">
                   <Icon name={icon} class="w-10 h-10" />
                   <div class="ml-4 text-xl font-bold">{title}</div>
                 </div>
-                {description && <p class="text-muted dark:text-stone-400 text-md mt-4" set:html={description} />}
+                {description && <p class="text-muted dark:text-zinc-400 text-md mt-4" set:html={description} />}
               </div>
             </a>
           ))
