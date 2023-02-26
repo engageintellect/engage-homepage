@@ -8,11 +8,6 @@ export const headerData = {
     },
 
     {
-      text: 'tech',
-      href: '/#technologies',
-    },
-
-    {
       text: 'articles',
       href: '/category/articles',
     },
@@ -20,6 +15,11 @@ export const headerData = {
     {
       text: 'projects',
       href: '/category/projects',
+    },
+
+    {
+      text: 'tech',
+      href: '/#technologies',
     },
 
     {
