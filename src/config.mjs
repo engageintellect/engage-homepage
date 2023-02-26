@@ -7,12 +7,12 @@ const CONFIG = {
   basePathname: '/',
   trailingSlash: false,
 
-  title: '@engageintellect - A Personal Home Page',
+  title: '@engageintellect',
   description:
     'This is a personal website for @engageintellect. It is a place to share my thoughts, ideas, and projects.',
   defaultImage: defaultImage,
 
-  defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  defaultTheme: 'dark', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
   language: 'en',
   textDirection: 'ltr',
