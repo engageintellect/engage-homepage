@@ -2,7 +2,7 @@
 publishDate: 2023-03-03T00:00:00Z
 title: Deploying Pocketbase on Ubuntu
 description: How to deploy a production Pocketbase server on Ubuntu using Nginx.
-excerpt: How to deploy a production Pocketbase server on Ubuntu using Nginx.
+excerpt: How to deploy a production Pocketbase server using Nginx on Ubuntu.
 category: Articles
 image: 'https://pocketbase.io/images/og.png'
 tags:
