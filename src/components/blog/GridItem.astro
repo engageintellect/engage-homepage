@@ -16,39 +16,40 @@ const image = await findImage(post.image);
 ---
 
 <article class="mb-6 transition">
-  <div class="relative md:h-64 bg-zinc-400 dark:bg-zinc-700 rounded shadow-lg mb-6">
-    <a href={`/${post.slug}`}>
+  <div class="group">
+    <div class="relative md:h-64 bg-zinc-400 dark:bg-zinc-700 rounded shadow-lg mb-6 overflow-hidden">
+      <a href={`/${post.slug}`}>
+        {
+          image && (
+            <Picture
+              src={image}
+              class="md:object-cover group-hover:scale-110 transition-all duration-300 w-full md:w-auto md:h-full rounded shadow-lg bg-zinc-400 dark:bg-zinc-700"
+              widths={[400, 900]}
+              width={400}
+              height={224}
+              sizes="(max-width: 900px) 400px, 900px"
+              alt={post.title}
+              aspectRatio="16:9"
+              loading="lazy"
+              decoding="async"
+            />
+          )
+        }
+      </a>
+    </div>
+    <h3 class="mb-2 text-xl font-bold leading-tight sm:text-2xl font-heading">
       {
-        image && (
-          <Picture
-            src={image}
-            class="md:object-cover w-full md:w-auto md:h-full rounded shadow-lg bg-zinc-400 dark:bg-zinc-700"
-            widths={[400, 900]}
-            width={400}
-            height={224}
-            sizes="(max-width: 900px) 400px, 900px"
-            alt={post.title}
-            aspectRatio="16:9"
-            loading="lazy"
-            decoding="async"
-          />
+        BLOG?.post?.disabled ? (
+          post.title
+        ) : (
+          <a href={getPermalink(post.permalink, 'post')} class="  transition ease-in duration-200">
+            {post.title}
+          </a>
         )
       }
-    </a>
+    </h3>
   </div>
-  <h3 class="mb-2 text-xl font-bold leading-tight sm:text-2xl font-heading">
-    {
-      BLOG?.post?.disabled ? (
-        post.title
-      ) : (
-        <a
-          href={getPermalink(post.permalink, 'post')}
-          class="hover:text-primary dark:hover:text-blue-700  transition ease-in duration-200"
-        >
-          {post.title}
-        </a>
-      )
-    }
-  </h3>
-  <p class="text-muted dark:text-zinc-400 text-lg">{post.excerpt || post.description}</p>
+  <a href={getPermalink(post.permalink, 'post')}>
+    <p class="text-muted dark:text-zinc-400 text-lg">{post.excerpt || post.description}</p>
+  </a>
 </article>

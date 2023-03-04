@@ -20,15 +20,15 @@ const image = await findImage(post.image);
 const link = !BLOG?.post?.disabled ? getPermalink(post.permalink, 'post') : '';
 ---
 
-<article class={`max-w-md mx-auto md:max-w-none grid gap-6 md:gap-8 ${image ? 'md:grid-cols-2' : ''}`}>
+<article class={`max-w-md mx-auto group md:max-w-none grid gap-6 md:gap-8 ${image ? 'md:grid-cols-2' : ''}`}>
   {
     image && (
-      <a class="relative block group" href={link ?? 'javascript:void(0)'}>
+      <a class="relative block" href={link ?? 'javascript:void(0)'}>
         <div class="relative h-0 pb-[56.25%] md:pb-[75%] md:h-72 lg:pb-[56.25%] overflow-hidden bg-zinc-400 dark:bg-zinc-700 rounded shadow-lg">
           {image && (
             <Picture
               src={image}
-              class="absolute inset-0 object-cover w-full h-full mb-6 rounded shadow-lg bg-zinc-400 dark:bg-zinc-700"
+              class="group-hover:scale-110 transitin-all duration-300 absolute inset-0 object-cover w-full h-full mb-6 rounded shadow-lg bg-zinc-400 dark:bg-zinc-700"
               widths={[400, 900]}
               sizes="(max-width: 900px) 400px, 900px"
               alt={post.title}
@@ -63,7 +63,7 @@ const link = !BLOG?.post?.disabled ? getPermalink(post.permalink, 'post') : '';
       <h2 class="text-xl sm:text-2xl font-bold leading-tight mb-2 font-heading dark:text-zinc-300">
         {
           link ? (
-            <a class="hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href={link}>
+            <a class="transition ease-in duration-200" href={link}>
               {post.title}
             </a>
           ) : (
@@ -73,7 +73,9 @@ const link = !BLOG?.post?.disabled ? getPermalink(post.permalink, 'post') : '';
       </h2>
     </header>
 
-    {post.excerpt && <p class="flex-grow text-muted dark:text-zinc-400 text-lg">{post.excerpt}</p>}
+    <a href={link}>
+      {post.excerpt && <p class="flex-grow text-muted dark:text-zinc-400 text-lg">{post.excerpt}</p>}
+    </a>
     <footer class="mt-5">
       <PostTags tags={post.tags} />
     </footer>

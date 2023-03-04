@@ -39,6 +39,7 @@ const {
                 <Fragment set:html={image} />
               ) : (
                 <Picture
+                  priority
                   class="mx-auto rounded-full shadow-md shadow-zinc-500 hover:animate-pulse transition-all duration-200"
                   widths={[1024, 1024]}
                   aspectRatio={1 / 1}

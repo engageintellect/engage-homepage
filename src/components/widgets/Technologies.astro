@@ -53,10 +53,10 @@ const {
         {
           items.map(({ title, description, icon, url }) => (
             <a href={url} target="_blank">
-              <div class="relative flex flex-col p-6 bg-white dark:bg-zinc-900 rounded shadow-lg hover:shadow-md transition border border-transparent dark:border-zinc-800">
+              <div class="group relative flex flex-col p-6 bg-white dark:bg-zinc-900 rounded shadow-lg hover:shadow-md transition border border-transparent dark:border-zinc-800">
                 <div class="flex items-center">
-                  <Icon name={icon} class="w-10 h-10" />
-                  <div class="ml-4 text-xl font-bold">{title}</div>
+                  <Icon name={icon} class="w-10 h-10 group-hover:scale-105 transition-all duration-200" />
+                  <div class="ml-4 text-xl font-bold group-hover:scale-110 transition-all duration-500">{title}</div>
                 </div>
                 {description && <p class="text-muted dark:text-zinc-400 text-md mt-4" set:html={description} />}
               </div>
