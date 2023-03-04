@@ -9,7 +9,6 @@ tags:
   - Pocketbase
   - Ubuntu
   - Server
-  - Backend
 ---
 
 ## Introduction
