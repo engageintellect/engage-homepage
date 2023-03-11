@@ -3,7 +3,7 @@ publishDate: 2023-03-11T00:00:00Z
 title: Building a Next.js Application with Notion as a Backend
 description: Using Notion as a backend for a Next.js application. A Step-by-Step Guide.
 excerpt: Notion provides an API that allows you to access and manipulate your data programmatically. This means you can build custom applications and integrations that leverage your Notion database as a backend.
-category: Projects
+category: Articles
 image: 'https://engage-blog-fqcuq1awv-engageintellect.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1642132652859-3ef5a1048fd1%3Fixlib%3Drb-4.0.3%26q%3D80%26fm%3Djpg%26crop%3Dentropy%26cs%3Dtinysrgb&w=3840&q=75'
 tags:
   - Next.js
