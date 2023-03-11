@@ -46,7 +46,8 @@ To install the notion-client package, run the following command:
 npm install notion-client
 ```
 
-S### tep 1: Create a Notion database
+### Step 1: Create a Notion database
+
 First, let's create a Notion database to store our blog posts. To do this, go to your Notion dashboard and create a new page. In the page properties, click the "Add a database" button, and select "Blog Posts" as the database template.
 
 This will create a database with the following properties:
