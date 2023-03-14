@@ -10,7 +10,7 @@ const CONFIG = {
   title: '@engageintellect',
   description:
     'This is a personal website for @engageintellect. It is a place to share my thoughts, ideas, and projects.',
-  defaultImage: defaultImage,
+  defaultImage: 'https://github.com/engageintellect.png',
 
   defaultTheme: 'dark', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
