@@ -1,4 +1,4 @@
-import defaultImage from './assets/images/default.png';
+// import defaultImage from './assets/images/default.png';
 
 const CONFIG = {
   name: '@engageintellect',
