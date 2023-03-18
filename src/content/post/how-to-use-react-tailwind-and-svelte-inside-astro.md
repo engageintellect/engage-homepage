@@ -70,7 +70,7 @@ code . && pnpm run dev
 
 We’ll navigate to `http://localhost:3000` in our browser to make sure that our server is up:
 
-![Untitled](https://engage-blog.vercel.app/_next/image?url=https%3A%2F%2Fs3.us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff45db821-fa5e-4421-8b59-cbb5d95f653f%2FUntitled.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Content-Sha256%3DUNSIGNED-PAYLOAD%26X-Amz-Credential%3DAKIAT73L2G45EIPT3X45%252F20230318%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20230318T204220Z%26X-Amz-Expires%3D86400%26X-Amz-Signature%3Dadf6640bdd9b6ecbec7e268b1ee1ddccfb12a536c18f945b9982b317e0bd20ee%26X-Amz-SignedHeaders%3Dhost%26x-id%3DGetObject&w=3840&q=75)
+![Untitled](https://engage-blog.vercel.app/_next/image?url=https%3A%2F%2Fs3.us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff45db821-fa5e-4421-8b59-cbb5d95f653f%2FUntitled.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Content-Sha256%3DUNSIGNED-PAYLOAD%26X-Amz-Credential%3DAKIAT73L2G45EIPT3X45%252F20230318%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20230318T214748Z%26X-Amz-Expires%3D86400%26X-Amz-Signature%3D50df4db85a219c9b7d515fb6b8e66610a8253f82c57842a5a92b57053b70db07%26X-Amz-SignedHeaders%3Dhost%26x-id%3DGetObject&w=3840&q=75)
 
 ### Adding TailwindCSS, React, and Svelte to our Project
 
@@ -82,7 +82,7 @@ pnpm astro add tailwind react svelte
 
 We can verify that everything installed correctly be checking to see if our new packages were added to our `astro.config.mjs` file.
 
-![Untitled](https://engage-blog.vercel.app/_next/image?url=https%3A%2F%2Fs3.us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff45db821-fa5e-4421-8b59-cbb5d95f653f%2FUntitled.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Content-Sha256%3DUNSIGNED-PAYLOAD%26X-Amz-Credential%3DAKIAT73L2G45EIPT3X45%252F20230318%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20230318T204220Z%26X-Amz-Expires%3D86400%26X-Amz-Signature%3Dadf6640bdd9b6ecbec7e268b1ee1ddccfb12a536c18f945b9982b317e0bd20ee%26X-Amz-SignedHeaders%3Dhost%26x-id%3DGetObject&w=3840&q=75)
+![Untitled](https://engage-blog.vercel.app/_next/image?url=https%3A%2F%2Fs3.us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F6bba234b-c3c4-4459-98a9-f0651433b0c8%2FUntitled.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Content-Sha256%3DUNSIGNED-PAYLOAD%26X-Amz-Credential%3DAKIAT73L2G45EIPT3X45%252F20230318%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20230318T214748Z%26X-Amz-Expires%3D86400%26X-Amz-Signature%3Dc7a03c58c0c8675788d007c78dc8c760b9e245d3a59bdd06e378884f7b3b7df5%26X-Amz-SignedHeaders%3Dhost%26x-id%3DGetObject&w=1920&q=75)
 
 ## Create Svelte Component
 
@@ -113,7 +113,7 @@ Finally, we will drop our component in wherever we like by using the following:
 
 The result should look something like this:
 
-![Untitled](https://engage-blog.vercel.app/_next/image?url=https%3A%2F%2Fs3.us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff45db821-fa5e-4421-8b59-cbb5d95f653f%2FUntitled.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Content-Sha256%3DUNSIGNED-PAYLOAD%26X-Amz-Credential%3DAKIAT73L2G45EIPT3X45%252F20230318%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20230318T204220Z%26X-Amz-Expires%3D86400%26X-Amz-Signature%3Dadf6640bdd9b6ecbec7e268b1ee1ddccfb12a536c18f945b9982b317e0bd20ee%26X-Amz-SignedHeaders%3Dhost%26x-id%3DGetObject&w=3840&q=75)
+![Untitled](https://engage-blog.vercel.app/_next/image?url=https%3A%2F%2Fs3.us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb54639f8-4d66-4bd0-8d22-5eb2c3fe1dfb%2FUntitled.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Content-Sha256%3DUNSIGNED-PAYLOAD%26X-Amz-Credential%3DAKIAT73L2G45EIPT3X45%252F20230318%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20230318T214748Z%26X-Amz-Expires%3D86400%26X-Amz-Signature%3D2e1a3e4ab8f9a9dbaff67a61b7b76fa03168ac03e4b54d41c64e77e3b972a505%26X-Amz-SignedHeaders%3Dhost%26x-id%3DGetObject&w=3840&q=75)
 
 ## Create React Component
 
