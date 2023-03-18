@@ -14,7 +14,7 @@ tags:
 
 ## Introduction
 
-I’ll have to admit, Astro has been growing on me lately, big time. I don’t know weather it’s the sheer speed, the familiar template layout, or the ever-growing feature set. However, what I do know, is that Astro is capable of doing most of the things I want to do, well.
+I’ll have to admit, Astro has been growing on me lately, big time. I don’t know whether it’s the sheer speed, the familiar template layout, or the ever-growing feature set. However, what I do know, is that Astro is capable of doing most of the things I want to do, well.
 
 ## Overview
 
