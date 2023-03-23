@@ -1,8 +1,6 @@
-export async function get({}) {
+export async function get() {
   return {
-    body: JSON.stringify({
-      name: 'Astro',
-      url: 'https://astro.build/',
-    }),
+    status: 200,
+    body: 'Hello world!',
   };
 }
