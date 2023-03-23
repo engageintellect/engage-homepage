@@ -162,7 +162,7 @@ To deploy our app to Vercel, and ensure that any future API routes or component 
 pnpm astro add vercel
 ```
 
-From there, you can simple run the `vercel` command in your cli, or go to the Vercel website to deploy your project through the GUI.
+From there, you can simply run the `vercel` command in your cli, or go to the Vercel website to deploy your project through the GUI.
 
 ## Conclusion
 
