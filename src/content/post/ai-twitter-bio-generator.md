@@ -32,3 +32,5 @@ git clone https://github.com/engageintellect/twitter-bio.git
 ```bash
 cd linktreez && pnpm i && pnpm run dev
 ```
+
+Open a browser and go to [http://localhost:3000](http://localhost:3000)
