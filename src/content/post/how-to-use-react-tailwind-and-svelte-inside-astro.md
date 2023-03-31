@@ -42,23 +42,23 @@ pnpm create astro@latest .
 
 When prompted, we will opt to include sample files for this demo:
 
-![Untitled](https://engage-blog.vercel.app/_next/image?url=https%3A%2F%2Fs3.us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd3507100-f7ca-4dd7-8dba-54364787266a%2FUntitled.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Content-Sha256%3DUNSIGNED-PAYLOAD%26X-Amz-Credential%3DAKIAT73L2G45EIPT3X45%252F20230318%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20230318T204220Z%26X-Amz-Expires%3D86400%26X-Amz-Signature%3D4b9f3a86f22b3c9ec80c3fdb680a6aed8e2b4f9ac8ad808338161c3b24ba03f1%26X-Amz-SignedHeaders%3Dhost%26x-id%3DGetObject&w=3840&q=75)
+![Untitled](https://miro.medium.com/v2/resize:fit:1400/0*EdC1Ocx_mshkElut)
 
 And to install dependencies:
 
-![Untitled](https://engage-blog.vercel.app/_next/image?url=https%3A%2F%2Fs3.us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa0678f2c-852f-4937-96b5-4739c9dd0b2b%2FUntitled.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Content-Sha256%3DUNSIGNED-PAYLOAD%26X-Amz-Credential%3DAKIAT73L2G45EIPT3X45%252F20230318%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20230318T204220Z%26X-Amz-Expires%3D86400%26X-Amz-Signature%3D7062d7b59a4c36107aa9eba2f01aefc3c49774a082b2dc5d4ab3e1c336ed8301%26X-Amz-SignedHeaders%3Dhost%26x-id%3DGetObject&w=3840&q=75)
+![Untitled](https://miro.medium.com/v2/resize:fit:1400/0*3XOrd9i6Hq9nUawb)
 
 We’re also going to opt for TypeScript, because I like things that make sense:
 
-![Untitled](https://engage-blog.vercel.app/_next/image?url=https%3A%2F%2Fs3.us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa1c4afd8-9206-468e-a934-388ec53626e0%2FUntitled.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Content-Sha256%3DUNSIGNED-PAYLOAD%26X-Amz-Credential%3DAKIAT73L2G45EIPT3X45%252F20230318%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20230318T204220Z%26X-Amz-Expires%3D86400%26X-Amz-Signature%3De2c6607f67ea27300ecfe5ef82e8e5cc6f1b22d4728fa0d8487881ce2d9015c8%26X-Amz-SignedHeaders%3Dhost%26x-id%3DGetObject&w=3840&q=75)
+![Untitled](https://miro.medium.com/v2/resize:fit:1400/0*XgV0A4SCXT9iefRo)
 
 And we’ll stick with the default Strictness for TypeScript, cause we’re not trying to prove anything:
 
-![Untitled](https://engage-blog.vercel.app/_next/image?url=https%3A%2F%2Fs3.us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F1fc86459-ef77-4606-81d2-cc89f17f87a3%2FUntitled.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Content-Sha256%3DUNSIGNED-PAYLOAD%26X-Amz-Credential%3DAKIAT73L2G45EIPT3X45%252F20230318%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20230318T204220Z%26X-Amz-Expires%3D86400%26X-Amz-Signature%3Dd21975dc99ae96a78778906f1aa57b58f39ada14e468c735f0f64bccc32ba94d%26X-Amz-SignedHeaders%3Dhost%26x-id%3DGetObject&w=2048&q=75)
+![Untitled](https://miro.medium.com/v2/resize:fit:1400/0*zLQB1JUau8vugS5w)
 
 Lastly, we will have the installer initialize a new Git repository for our project:
 
-![Untitled](https://engage-blog.vercel.app/_next/image?url=https%3A%2F%2Fs3.us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa39b8f82-c44c-4285-96b2-caf0d992868b%2FUntitled.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Content-Sha256%3DUNSIGNED-PAYLOAD%26X-Amz-Credential%3DAKIAT73L2G45EIPT3X45%252F20230318%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20230318T204220Z%26X-Amz-Expires%3D86400%26X-Amz-Signature%3Dda66a96006a78aa5ad2e9536b986b9c17faf6dccbadf558a3f1fa5a6286acd9b%26X-Amz-SignedHeaders%3Dhost%26x-id%3DGetObject&w=3840&q=75)
+![Untitled](https://miro.medium.com/v2/resize:fit:1400/0*fdtGtRLqDa5BwhYI)
 
 ## Starting our Project
 
@@ -70,7 +70,7 @@ code . && pnpm run dev
 
 We’ll navigate to `http://localhost:3000` in our browser to make sure that our server is up:
 
-![Untitled](https://engage-blog.vercel.app/_next/image?url=https%3A%2F%2Fs3.us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff45db821-fa5e-4421-8b59-cbb5d95f653f%2FUntitled.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Content-Sha256%3DUNSIGNED-PAYLOAD%26X-Amz-Credential%3DAKIAT73L2G45EIPT3X45%252F20230318%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20230318T214748Z%26X-Amz-Expires%3D86400%26X-Amz-Signature%3D50df4db85a219c9b7d515fb6b8e66610a8253f82c57842a5a92b57053b70db07%26X-Amz-SignedHeaders%3Dhost%26x-id%3DGetObject&w=3840&q=75)
+![Untitled](https://miro.medium.com/v2/resize:fit:1400/0*Q0p0plNS_P0odjct)
 
 ### Adding TailwindCSS, React, and Svelte to our Project
 
@@ -82,7 +82,7 @@ pnpm astro add tailwind react svelte
 
 We can verify that everything installed correctly be checking to see if our new packages were added to our `astro.config.mjs` file.
 
-![Untitled](https://engage-blog.vercel.app/_next/image?url=https%3A%2F%2Fs3.us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F6bba234b-c3c4-4459-98a9-f0651433b0c8%2FUntitled.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Content-Sha256%3DUNSIGNED-PAYLOAD%26X-Amz-Credential%3DAKIAT73L2G45EIPT3X45%252F20230318%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20230318T214748Z%26X-Amz-Expires%3D86400%26X-Amz-Signature%3Dc7a03c58c0c8675788d007c78dc8c760b9e245d3a59bdd06e378884f7b3b7df5%26X-Amz-SignedHeaders%3Dhost%26x-id%3DGetObject&w=1920&q=75)
+![Untitled](https://miro.medium.com/v2/resize:fit:1400/0*riuGkBsOD0Ag7veJ)
 
 ## Create Svelte Component
 
@@ -113,7 +113,7 @@ Finally, we will drop our component in wherever we like by using the following:
 
 The result should look something like this:
 
-![Untitled](https://engage-blog.vercel.app/_next/image?url=https%3A%2F%2Fs3.us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb54639f8-4d66-4bd0-8d22-5eb2c3fe1dfb%2FUntitled.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Content-Sha256%3DUNSIGNED-PAYLOAD%26X-Amz-Credential%3DAKIAT73L2G45EIPT3X45%252F20230318%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20230318T214748Z%26X-Amz-Expires%3D86400%26X-Amz-Signature%3D2e1a3e4ab8f9a9dbaff67a61b7b76fa03168ac03e4b54d41c64e77e3b972a505%26X-Amz-SignedHeaders%3Dhost%26x-id%3DGetObject&w=3840&q=75)
+![Untitled](https://miro.medium.com/v2/resize:fit:1400/0*Ctm4cs7vzxHLrUtY)
 
 ## Create React Component
 
@@ -150,7 +150,7 @@ Finally, we will drop our component in wherever we like by using the following:
 
 Your output should look something like this:
 
-![Untitled](https://engage-blog.vercel.app/_next/image?url=https%3A%2F%2Fs3.us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa8818580-130b-4233-bf3a-18b41193c974%2FUntitled.png%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Content-Sha256%3DUNSIGNED-PAYLOAD%26X-Amz-Credential%3DAKIAT73L2G45EIPT3X45%252F20230318%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20230318T204220Z%26X-Amz-Expires%3D86400%26X-Amz-Signature%3D4a11049974beb054374be21d710f35e91e5b610f2798f180d771ada0aaf839d4%26X-Amz-SignedHeaders%3Dhost%26x-id%3DGetObject&w=3840&q=75)
+![Untitled](https://miro.medium.com/v2/resize:fit:1400/0*n2Rk687QkcQdZFKp)
 
 ## Deploying our app to Vercel
 
