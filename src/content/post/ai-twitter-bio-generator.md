@@ -17,8 +17,8 @@ tags:
 
 Twitter-Bio is a tool to generate great twitter bios using OpenAI's ChatGPT API.
 
-<a href="https://twitter-bio-tau.vercel.app" target="_blank">Try the App</a>
-<a href="https://github.com/engageintellect/twitter-bio" target="_blank">Go to Repository</a>
+[Try the App](https://twitter-bio-tau.vercel.app)
+[Go to Repository](https://github.com/engageintellect/twitter-bio)
 
 ## Getting Started
 
