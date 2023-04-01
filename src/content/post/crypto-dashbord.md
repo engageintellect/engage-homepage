@@ -1,5 +1,5 @@
 ---
-publishDate: 2023-02-01T00:00:00Z
+publishDate: 2023-03-31T00:00:00Z
 title: Crypto Dashbord
 description: Easily determine the best time to buy or sell your crypto.
 excerpt: A simple crypto dashbord built with Sveltekit, CoinGecko API, Blockchain.com API, Fear & Greed index, TailwindCSS, and DaisyUI.
