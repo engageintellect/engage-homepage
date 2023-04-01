@@ -1,9 +1,6 @@
-// Outputs: /builtwith.json
-export async function get({ params, request }) {
+export async function get() {
   return {
-    body: JSON.stringify({
-      name: 'Astro',
-      url: 'https://astro.build/',
-    }),
+    status: 200,
+    body: 'Hello world!',
   };
 }
