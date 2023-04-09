@@ -20,10 +20,7 @@ const { tags, class: className = 'text-sm' } = Astro.props;
           {BLOG?.tag?.disabled ? (
             tag
           ) : (
-            <a
-              href={getPermalink(tag, 'tag')}
-              class="text-muted dark:text-zinc-300 hover:text-primary dark:hover:text-zinc-200"
-            >
+            <a href={getPermalink(tag, 'tag')} class="text-muted dark:text-zinc-300">
               {tag}
             </a>
           )}

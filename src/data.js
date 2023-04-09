@@ -70,6 +70,6 @@ export const footerData = {
   // `,
 
   footNote: `
-    Made by <a class="text-blue-600 hover:underline dark:text-zinc-200" href="https://github.com/engageintellect">@engageintellect</a> and <a class="text-blue-600 hover:underline dark:text-zinc-200" href="https://openai.com">OpenAI</a> · All rights reserved.
+    Made by <a class="text-zinc-500 hover:underline dark:text-zinc-200" href="https://github.com/engageintellect">@engageintellect</a> and <a class="text-zinc-500 hover:underline dark:text-zinc-200" href="https://openai.com">OpenAI</a> · All rights reserved.
   `,
 };
