@@ -45,7 +45,7 @@ export const footerData = {
       ],
     },
     {
-      title: 'Technology',
+      title: 'Site Stack',
       links: [
         { text: 'Astro', href: 'https://astro.build' },
         { text: 'Tailwind', href: 'https://tailwindcss.com' },
