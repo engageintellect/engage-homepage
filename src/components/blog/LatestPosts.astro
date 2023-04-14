@@ -46,7 +46,7 @@ const posts = await findLatestPosts({ count });
       }
     </div>
 
-    {information && <p class="text-muted dark:text-zinc-400 lg:text-sm lg:max-w-md" set:html={information} />}
+    {information && <p class="text-muted dark:text-zinc-400 lg:text-xs lg:max-w-md" set:html={information} />}
   </div>
 
   <Grid posts={posts} />

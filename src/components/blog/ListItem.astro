@@ -28,7 +28,7 @@ const link = !BLOG?.post?.disabled ? getPermalink(post.permalink, 'post') : '';
           {image && (
             <Picture
               src={image}
-              class="group-hover:scale-110 group-hover:saturate-150 transitin-all duration-300 absolute inset-0 object-cover w-full h-full mb-6 rounded shadow-lg bg-zinc-400 dark:bg-zinc-700"
+              class="group-hover:scale-110 saturate-50 group-hover:saturate-150 transitin-all duration-300 absolute inset-0 object-cover w-full h-full mb-6 rounded shadow-lg bg-zinc-400 dark:bg-zinc-700"
               widths={[400, 900]}
               sizes="(max-width: 900px) 400px, 900px"
               alt={post.title}

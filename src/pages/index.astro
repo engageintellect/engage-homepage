@@ -46,7 +46,7 @@ const meta = {
     <About
       highlight="About"
       title="I'm Josh."
-      subtitle="Full Stack Developer, based in Orange County, CA.🍊"
+      subtitle="Full Stack Developer, based in Orange County, CA. 🍊"
       items={[
         [
           {
@@ -232,7 +232,7 @@ const meta = {
   <!-- HighlightedPosts Widget ******* -->
 
   <LatestPosts
-    title="blog posts, articles, tutorials, and projects."
+    title="articles, projects, & tutorials."
     information={`
       These are some of my latest blog posts, articles, tutorials, and projects. I write about web development, design, and technology. I also share my experiences and lessons learned from my projects and adventures.
 		`}
@@ -309,18 +309,20 @@ const meta = {
 
   <!-- CallToAction Widget *********** -->
 
-  <CallToAction
-    callToAction={{
-      text: 'E-mail Me',
-      href: 'mailto:engageintellect@gmail.com',
-      icon: 'tabler:mail',
-    }}
-  >
-    <Fragment slot="title">Contact Me</Fragment>
+  <div id="contact">
+    <CallToAction
+      callToAction={{
+        text: 'E-mail Me',
+        href: 'mailto:engageintellect@gmail.com',
+        icon: 'tabler:mail',
+      }}
+    >
+      <Fragment slot="title">Contact Me</Fragment>
 
-    <Fragment slot="subtitle">
-      Let's talk about your project. <br class="hidden md:inline" />We'll work together to create a solution that fits
-      your budget and timeline.
-    </Fragment>
-  </CallToAction>
+      <Fragment slot="subtitle">
+        Let's talk about your project. <br class="hidden md:inline" />We'll work together to create a solution that fits
+        your budget and timeline.
+      </Fragment>
+    </CallToAction>
+  </div>
 </Layout>
