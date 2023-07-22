@@ -1,6 +1,9 @@
 export async function get() {
   return {
     status: 200,
-    body: 'Hello world!',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ message: 'Hello world!' }), // Convert the object to JSON string
   };
 }
