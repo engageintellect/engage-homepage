@@ -10,8 +10,6 @@ tags:
   - TailwindCSS
 ---
 
-# sveltekit-landing-daisy
-
 sveltekit-landing-daisy is a landing page template made using SvelteKit 1.0, TailwindCSS, and Daisy UI.
 
 <a href="https://github.com/engageintellect/sveltekit-landing-daisy" target="_blank">Go to Repository</a>

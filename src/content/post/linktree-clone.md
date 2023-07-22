@@ -10,8 +10,6 @@ tags:
   - TailwindCSS
 ---
 
-# LinkTreez
-
 LinkTreez is a linktree clone made using Next.js 13, Tailwind, and Daisy UI.
 
 <a href="https://github.com/engageintellect/linktreez" target="_blank">Go to Repository</a>

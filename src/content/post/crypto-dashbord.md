@@ -14,8 +14,6 @@ tags:
   - DaisyUI
 ---
 
-# Crypto-Dashboard
-
 Crypto-Dashboard is a simple crypto dashbord built with Sveltekit, CoinGecko API, Blockchain.com API, Fear & Greed index, and TailwindCSS.
 
 [Try the App](https://crypto-dashboard-engageintellect.vercel.app)

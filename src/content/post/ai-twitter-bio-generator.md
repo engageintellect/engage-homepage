@@ -13,8 +13,6 @@ tags:
   - TailwindCSS
 ---
 
-# Twitter-Bio
-
 Twitter-Bio is a tool to generate great twitter bios using OpenAI's ChatGPT API.
 
 [Try the App](https://twitter-bio-tau.vercel.app)
