@@ -1,9 +1,10 @@
-export async function get() {
+export async function get(req) {
   const message = 'Hello world!';
+  const headers = {
+    'Content-Type': 'application/json',
+  };
   return {
-    headers: {
-      'Content-Type': 'application/json',
-    },
+    headers,
     body: JSON.stringify({ message }),
   };
 }
