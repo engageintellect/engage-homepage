@@ -1,10 +1,6 @@
 export async function get() {
   return {
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: {
-      message: 'Hello world!',
-    },
+    status: 200,
+    body: 'Hello world!',
   };
 }
