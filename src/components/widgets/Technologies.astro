@@ -50,7 +50,9 @@ const {
           </div>
         )
       }
-      <div class={`grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-12 dark:text-white items-stretch`}>
+      <div
+        class={`grid gap-2 sm:gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-12 dark:text-white items-stretch`}
+      >
         {
           items.map(({ title, description, icon, url }) => (
             <a href={url} target="_blank">
@@ -59,7 +61,9 @@ const {
                   <Icon name={icon} class="w-10 h-10 group-hover:scale-110 transition-all duration-700" />
                   <div class="ml-4 text-xl font-bold group-hover:scale-110 transition-all duration-500">{title}</div>
                 </div>
-                {description && <p class="text-muted dark:text-zinc-400 text-md mt-4" set:html={description} />}
+                <div class="hidden lg:flex">
+                  {description && <p class="text-muted dark:text-zinc-400 text-md mt-4" set:html={description} />}
+                </div>
               </div>
             </a>
           ))
