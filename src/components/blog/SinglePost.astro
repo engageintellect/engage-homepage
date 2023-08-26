@@ -22,22 +22,36 @@ const { post, url } = Astro.props;
   <article>
     <header class={post.image ? '' : ''}>
       <div class="flex justify-between flex-col sm:flex-row max-w-3xl mx-auto mt-0 mb-2 px-4 sm:px-6 sm:items-center">
-        <p>
-          <Icon name="tabler:clock" class="w-4 h-4 inline-block -mt-0.5 dark:text-zinc-400" />
+        <div class="flex items-center gap-5 text-xs">
+          <div class="font-thin">
+
           <time datetime={String(post.publishDate)}>{getFormattedDate(post.publishDate)}</time>
+          </div>
+
+          <div>
+
           {
             post.category && (
               <>
-                {' '}
-                ·{' '}
                 <a class="lowercase hover:underline" href={getPermalink(post.category, 'category')}>
                   {post.category.replaceAll('-', ' ')}
                 </a>
               </>
             )
           }
-          {post.readingTime && <> · {post.readingTime} min read</>}
-        </p>
+          </div>
+
+
+          <div class="flex gap-1">
+            <div>
+              <Icon name="tabler:clock" class="w-4 h-4 inline-block -mt-0.5 dark:text-zinc-400" />
+            </div>
+
+            <div class="font-semibold">
+              {post.readingTime && <>{post.readingTime} min read</>}
+            </div>
+          </div>
+        </div>
       </div>
       <h1
         class="px-4 sm:px-6 max-w-3xl mx-auto text-4xl md:text-5xl font-bold leading-tighter tracking-tighter font-heading"
@@ -45,7 +59,7 @@ const { post, url } = Astro.props;
         {post.title}
       </h1>
       <p
-        class="max-w-3xl mx-auto mt-4 mb-8 px-4 sm:px-6 text-xl md:text-2xl text-muted dark:text-zinc-400 text-justify"
+        class="max-w-3xl mx-auto mt-4 mb-8 px-4 sm:px-6 text-md md:text-lg text-muted dark:text-zinc-400 text-justify"
       >
         {post.excerpt}
       </p>
@@ -60,7 +74,7 @@ const { post, url } = Astro.props;
           <div class="max-w-3xl mx-auto md:px-4">
             <Picture
               src={post.image}
-              class="max-w-full mx-auto mb-6 md:rounded-md bg-zinc-400 dark:bg-zinc-700"
+              class="max-w-full mx-auto mb-6 md:rounded-md"
               widths={[400, 900]}
               sizes="(max-width: 900px) 400px, 900px"
               alt={post.description || ''}
@@ -81,7 +95,7 @@ const { post, url } = Astro.props;
       }
     </header>
     <div
-      class="mx-auto px-6 sm:px-6 max-w-3xl prose prose-lg lg:prose-xl dark:prose-invert dark:prose-headings:text-zinc-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary dark:prose-a:text-primary prose-img:rounded-md prose-img:shadow-lg mt-8"
+      class="mx-auto px-6 sm:px-6 max-w-3xl prose dark:prose-invert dark:prose-headings:text-zinc-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary dark:prose-a:text-primary prose-img:rounded-md prose-img:shadow-lg mt-8"
     >
       {
         post.Content ? (
