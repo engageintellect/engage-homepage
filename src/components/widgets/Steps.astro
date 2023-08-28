@@ -52,14 +52,14 @@ const {
           ))
       }
     </div>
-    <div class="relative">
+    <div class="relative opacity-gradient">
       {
         image &&
           (typeof image === 'string' ? (
             <Fragment set:html={image} />
           ) : (
             <Picture
-              class="inset-0 object-cover object-top w-full rounded-md shadow-lg md:absolute md:h-full bg-zinc-400 dark:bg-zinc-700 hidden sm:flex"
+              class="inset-0 object-cover object-top w-full rounded-md shadow-lg md:absolute md:h-full bg-zinc-400 dark:bg-zinc-700 hidden sm:flex opacity-gradient"
               widths={[400, 768]}
               sizes="(max-width: 768px) 100vw, 432px"
               aspectRatio="432:768"
@@ -72,3 +72,17 @@ const {
     </div>
   </div>
 </section>
+
+
+
+<style>
+  .opacity-gradient::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+    mix-blend-mode: multiply;
+  }
+
+</style>
+
