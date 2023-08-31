@@ -1,6 +1,6 @@
 ---
 import { Icon } from 'astro-icon';
-import { Picture } from '@astrojs/image/components';
+import { Image } from 'astro:assets';
 
 interface CallToAction {
   text: string;
@@ -11,6 +11,7 @@ interface CallToAction {
 export interface Props {
   title?: string;
   subtitle?: string;
+  content?: string;
   callToAction?: string | CallToAction;
   callToAction2?: string | CallToAction;
   image?: string | any; // TODO: find HTMLElementProps
@@ -38,11 +39,10 @@ const {
               {typeof image === 'string' ? (
                 <Fragment set:html={image} />
               ) : (
-                <Picture
+                <Image
                   priority
                   class="w-32 sm:w-40 md:w-50 lg:w-64 mx-auto rounded-full shadow-md shadow-zinc-500 dark:shadow-primary hover:animate-pulse transition-all duration-200"
-                  widths={[1024, 1024]}
-                  aspectRatio={1 / 1}
+                  width={1024}
                   loading="eager"
                   width={300}
                   height={300}

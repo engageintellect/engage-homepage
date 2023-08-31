@@ -1,13 +1,12 @@
 ---
 import { Icon } from 'astro-icon';
-import { Picture } from '@astrojs/image/components';
+import { Image } from 'astro:assets';
 
 import PostTags from '~/components/blog/Tags.astro';
 import SocialShare from '~/components/common/SocialShare.astro';
 
 import { getPermalink } from '~/utils/permalinks';
 import { getFormattedDate } from '~/utils/utils';
-
 import type { Post } from '~/types';
 
 export interface Props {
@@ -17,6 +16,8 @@ export interface Props {
 
 const { post, url } = Astro.props;
 ---
+
+
 
 <section class="py-8 sm:py-16 lg:py-20 mx-auto">
   <article>
@@ -72,19 +73,14 @@ const { post, url } = Astro.props;
       {
         post.image ? (
           <div class="max-w-3xl mx-auto md:px-4">
-            <Picture
+            <Image
               src={post.image}
-              class="max-w-full mx-auto mb-6 md:rounded-md"
-              widths={[400, 900]}
-              sizes="(max-width: 900px) 400px, 900px"
+              class="max-w-full mx-auto max-h-72 md:max-h-96 object-cover mb-6 md:rounded-md"
               alt={post.description || ''}
               loading="eager"
-              aspectRatio={16 / 9}
               width={900}
               height={506}
-              loading="eager"
               decoding="async"
-              background={undefined}
             />
           </div>
         ) : (

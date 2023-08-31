@@ -1,6 +1,6 @@
 ---
 import { Icon } from 'astro-icon';
-import { Picture } from '@astrojs/image/components';
+import { Image } from 'astro:assets';
 import PostTags from '~/components/blog/Tags.astro';
 
 import { BLOG } from '~/config.mjs';
@@ -26,13 +26,13 @@ const link = !BLOG?.post?.disabled ? getPermalink(post.permalink, 'post') : '';
       <a class="relative block" href={link ?? 'javascript:void(0)'}>
         <div class="relative h-0 pb-[56.25%] md:pb-[75%] md:h-72 lg:pb-[56.25%] overflow-hidden bg-zinc-400 dark:bg-zinc-700 rounded shadow-lg">
           {image && (
-            <Picture
+            <Image
               src={image}
               class="group-hover:scale-110 saturate-50 group-hover:saturate-150 transitin-all duration-300 absolute inset-0 object-cover w-full h-full mb-6 rounded shadow-lg bg-zinc-400 dark:bg-zinc-700"
-              widths={[400, 900]}
+              width={900}
+              height={400}
               sizes="(max-width: 900px) 400px, 900px"
               alt={post.title}
-              aspectRatio="16:9"
               loading="lazy"
               decoding="async"
             />
