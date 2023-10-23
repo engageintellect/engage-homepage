@@ -16,7 +16,7 @@ tags:
 
 Crypto-Dashboard is a simple crypto dashbord built with Sveltekit, CoinGecko API, Blockchain.com API, Fear & Greed index, and TailwindCSS.
 
-[Try the App](https://crypto-dashboard-engageintellect.vercel.app)
+[Try the App](https://engage-crypto.vercel.app)
 <br/>
 [Go to Repository](https://github.com/engageintellect/crypto-dashboard)
 <br/>

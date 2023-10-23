@@ -4,7 +4,7 @@ title: Project Nexum Wiki
 description: Freely create and share knowledge.
 excerpt: An open wiki platform built with Sveltekit, Pocketbase, Zod, TinyMCE, TailwindCSS, and DaisyUI.
 category: Projects
-image: ~/assets/images/wiki-platform.png
+image: /blog-placeholder-4.jpg
 tags:
   - Sveltekit
   - Pocketbase
